@@ -1,0 +1,35 @@
+<mat-nav-list>
+  <a mat-list-item routerLink="/home" (click)="onSidenavClose()">
+    <mat-icon>home</mat-icon>
+    <span class="nav-caption">Home</span>
+  </a>
+  <a mat-list-item routerLink="/about" (click)="onSidenavClose()">
+    <mat-icon>help</mat-icon>
+    <span class="nav-caption">About</span>
+  </a>
+<!---
+  <a mat-list-item routerLink="/user-contacts" (click)="onSidenavClose()">
+    <mat-icon>assignment_ind</mat-icon>
+    <span class="nav-caption">My Contacts</span>
+  </a>
+-->
+  <a mat-list-item routerLink="/contact/contacts" (click)="onSidenavClose()">
+    <mat-icon>assignment_ind</mat-icon>
+    <span class="nav-caption">All Contacts</span>
+  </a>
+<!--
+  <a mat-list-item routerLink="/group/groups" (click)="onSidenavClose()">
+    <mat-icon>group</mat-icon>
+    <span class="nav-caption">Groups</span>
+  </a>
+-->
+  <mat-list-item [matMenuTriggerFor]="appsmenu">
+    <mat-icon>unfold_more</mat-icon>
+    <a matline>Apps</a>
+  </mat-list-item>
+  <mat-menu #appsmenu="matMenu">
+    <button mat-menu-item routerLink="/dashboard" (click)="onSidenavClose()">Dashboard</button>
+    <button mat-menu-item routerLink="/logs" (click)="onSidenavClose()">Logs</button>
+    <button mat-menu-item routerLink="/whois" (click)="onSidenavClose()">Whois</button>
+  </mat-menu>
+</mat-nav-list>
