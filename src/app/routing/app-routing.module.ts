@@ -4,8 +4,10 @@ import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 import { AboutComponent } from '../about/about.component';
 import { ErrorComponent } from '../error/error.component';
 import { EmailComponent } from '../email/email.component';
+import { TestComponent } from '../test/test.component';
 
 const routes: Routes = [
+    { path: 'test', component: TestComponent },
     { path: '', redirectTo: '/about', pathMatch: 'full' },
     { path: 'about', component: AboutComponent },
     { path: 'home',

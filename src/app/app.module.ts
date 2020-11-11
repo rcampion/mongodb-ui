@@ -26,6 +26,7 @@ import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
 import { ContactDeleteDialogComponent } from './contact/contact-delete/contact-delete-dialog.component';
 import { EmailComponent } from './email/email.component';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
       declarations: [
@@ -37,7 +38,8 @@ import { EmailComponent } from './email/email.component';
             ErrorComponent,
             FooterComponent,
             ContactDeleteDialogComponent,
-            EmailComponent
+            EmailComponent,
+            TestComponent
       ],
       entryComponents: [
             ContactDeleteDialogComponent
